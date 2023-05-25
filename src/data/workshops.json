@@ -1,0 +1,33 @@
+{
+  "workshops": [
+    {
+      "title": "Programming I: Introduction to Programming",
+      "desc": "Programming I encompasses a comprehensive exploration of the core principles of programming, with a focus on text-based coding using Python. You will delve into programming concepts such as data types, control flow, and functions. Additionally, you will acquire problem-solving skills and develop critical thinking abilities like a programmer, including following the Software Development Life Cycle (SDLC) and working collaboratively in teams.",
+      "taught": "Ashwin Talwalkar & Vinay Siva",
+      "rel-link": "/workshops/intro-to-programming",
+      "level": "0",
+      "for": "This curriculum is specifically designed for high school and later middle school students, and it does not require any previous programming experience.",
+      "syllabus": "http://127.0.0.1:3000/workshops"
+    },
+    {
+      "title": "Web Develeopment I: Intro to Web Development",
+      "desc": "Learn everything you need to know to build web based application. You'll explore topics such as HTML, CSS, and JavaScript, the three foundational technologies of the web, and discover how to use them to design and structure web apps, add multimedia content, and make your site responsive to different devices. Additionally, you will acquire problem-solving skills and develop critical thinking abilities like a programmer, including following the Software Development Life Cycle (SDLC) and working collaboratively in teams.",
+      "taught": "Ashwin Talwalkar",
+      "rel-link": "/workshops/intro-to-web-dev",
+      "image": "images/webdev.png",
+      "level": "0",
+      "for": "This curriculum is specifically designed for high school and later middle school students, and it does not require any previous programming experience.",
+      "syllabus": "http://127.0.0.1:3000/workshops"
+    },
+    {
+      "title": "Programming II: Introduction to Data Structures and Algorithms",
+      "syllabus": "http://127.0.0.1:3000/workshops"
+  
+    },
+    {
+      "title": "Web Development II: Building Full Stack Applications",
+      "syllabus": "http://127.0.0.1:3000/workshops"
+  
+    }
+  ]
+}

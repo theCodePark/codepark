@@ -1,0 +1,26 @@
+.how-it-works{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-top: 7rem;
+  width: 100%;
+  text-align: center;
+}
+
+.how-it-works h1 {
+  color: var(--secondary-color);
+  font-size: 3rem;
+}
+
+h3{
+  font-weight: normal;
+}
+
+.how-it-works div{
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-direction: column;
+  max-width: 45rem;
+}

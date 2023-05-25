@@ -1,0 +1,15 @@
+.workshopPage-top{
+  margin-top: 7rem; flex-direction: column; width: 100%;
+}
+
+.workshopPage-top h1{
+  color: var(--secondary-color); font-size: 3rem; margin-bottom: 0.5rem;
+}
+
+.workshopPage-top h3{
+  font-weight: normal; max-width: 45rem; margin-bottom: 0;
+}
+
+.workshopPage-bottom {
+  flex-wrap: wrap; flex-direction: column; width: 100%;
+}

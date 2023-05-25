@@ -1,0 +1,46 @@
+.footer {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  background-color: #434B56;
+  padding: 10px;
+  box-shadow: none;
+  width: calc(100% - 20px);
+  height: 260px;
+
+  margin-top: 7rem;
+}
+
+.bottom{
+  position:absolute;
+  bottom:0;
+}
+
+.footer div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  margin: 0 5rem;
+}
+
+.footer div h4 {
+  color: #fff;
+}
+
+.footer div a {
+  color: #fff;
+  text-decoration: none;
+  margin: 0.5rem 0;
+}
+
+.footer div a svg {
+  margin-right: 0.5rem;
+}
+
+.copyright {
+  color: #fff;
+  position: absolute;
+  bottom: 0rem;
+  right: 1rem;
+}

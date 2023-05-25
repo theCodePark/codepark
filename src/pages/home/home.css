@@ -1,0 +1,83 @@
+.three-words{
+  color: var(--secondary-color);
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-direction: column;
+  width: fit-content;
+  margin: 0;
+  font-size: 7rem !important;
+}
+
+
+.hbox{
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: stretch;
+  width: calc(100% - 7rem);		
+  margin-left: 7rem;	
+}
+
+.hbox > *{
+  width: calc(100% / 3);
+  padding: 0 1rem;
+}
+
+.hbox h2{
+  color: var(--secondary-color);
+  margin: 0 0 2rem 0;
+}
+
+.hbox h3{
+  margin: 0;
+  color: var(--secondary-color);
+  font-weight: bold;
+  font-size: 1.5rem;
+}
+
+.hbox p{
+  font-weight: normal;
+  font-size: 1.25rem;
+  color: grey;
+}
+
+.hbox img{
+  width: 100%;
+  height: 10rem;
+  margin: 1rem 0;
+  border: 2px solid black; 
+  /* ^^ height and border are temp  */
+}
+
+
+.bottom-bubble{
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  background-color: whitesmoke;
+  color: var(--secondary-color);
+  padding: 1rem;
+  border-radius: 16px;
+  width: calc(100% - 10rem);
+  margin: 3rem 0;
+}
+
+.bottom-bubble a{
+  text-decoration: none;
+}
+
+.hbox ol{
+  font-size: 1.25rem;
+  font-weight: normal;
+  color: grey;
+}
+
+
+.home-images .vscodeIMG {
+  position: absolute;
+  top: 10rem;
+  right: 5rem;
+  z-index: -1;
+  width: 37rem;
+}

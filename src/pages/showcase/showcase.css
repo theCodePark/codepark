@@ -1,0 +1,20 @@
+
+.showcase-page{
+  margin-top: 7rem;
+}
+
+.showcase-page h1{
+  color: var(--secondary-color); font-size: 3rem;
+}
+
+.showcase-page div{
+  display: flex; flex-direction: column; align-items: center; justify-content: center; text-align: center; margin: auto 10rem;
+}
+
+.showcase-page a{
+  font-weight: bold; text-decoration: none;
+}
+
+.showcase-page h3{
+  max-width: 75%; font-weight: normal; font-size: 1.5rem;
+}
