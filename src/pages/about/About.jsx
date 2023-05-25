@@ -2,6 +2,7 @@ import './about.css'
 import instructors from '../../data/instructors.js'
 import InstructorCard from '../../components/instructorCard/InstructorCard'
 
+document.title = "CodePark | About"
 const About = () => {
   return(
     <>

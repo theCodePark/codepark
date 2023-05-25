@@ -6,6 +6,7 @@ import {collection, addDoc } from 'firebase/firestore';
 
 import {useNavigate} from 'react-router-dom';
 
+document.title = "CodePark | Sign Up"
 const Signup = () => {
     const navigate = useNavigate();
   

@@ -1,5 +1,6 @@
 import './home.css'
 
+document.title = "CodePark"
 const Home = () => {
     return (
         <>
