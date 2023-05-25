@@ -1,5 +1,6 @@
 import './signup.css'
 import * as workshopsJson from '../../data/workshops.json';
+import * as dateJson from '../../data/dates.json';
  
 import {getFirestoreInstance} from '../../utils/Firebase';
 import {collection, addDoc } from 'firebase/firestore';
@@ -88,6 +89,21 @@ const Signup = () => {
                 workshopsJson.workshops.map((workshop, index) => {
                     return(
                     <option key = {index} value={workshop.title}>{workshop.title}</option>
+                    )
+                })
+              }
+            </select>
+          </div>
+
+          <div className = "form-group">
+            <label htmlFor="date">Date Selection:</label>
+            <select id="date" name="date" required>
+              <option value="">Select a section</option>
+              {
+                dateJson.dates.map((date, index) => {
+                    const stringDate = date.start + " - " + date.end;
+                    return(
+                    <option key = {index} value={date.title}>{stringDate}</option>
                     )
                 })
               }
