@@ -1,10 +1,10 @@
 import './home.css'
 
-document.title = "CodePark"
+// document.title = "CodePark"
 const Home = () => {
     return (
         <>
-          <section style = {{height: "100vh", flexDirection: "column",}} >
+          <section className = "home-top" >
             <section>
               <div className="sub">
                 <h2 style = {{display: "flex", fontSize: "2.25rem", marginBottom: "1rem"}}> 
@@ -19,10 +19,6 @@ const Home = () => {
               </div>
             </section>
           </section>
-
-          {/* <div className="home-images">
-            <!-- <img src="images/homepageimage.png" className = "vscodeIMG" alt="doesnt exist"> -->
-          </div> */}
 
           <section style = {{flexDirection: "column"}}>
             <div className = "hbox">
@@ -51,7 +47,7 @@ const Home = () => {
             </div>
 
           </section>
-
+          
           <section style = {{marginTop: "7rem", flexDirection: "column"}}>
 
             <div className = "hbox">

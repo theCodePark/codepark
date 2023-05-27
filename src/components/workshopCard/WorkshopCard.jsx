@@ -14,17 +14,14 @@ const WorkshopCard = ({ workshop }) => {
         <div className="card-body">
           <div className="side">
             <h2 className="card-title">{workshop.title}</h2>
-            <div style = {{marginLeft: "1rem", marginRight: "1rem"}}>
-              <p className="card-text">{workshop.desc}</p>
-             
-            </div>
+            <p className="card-text">{workshop.desc}</p>
           </div>
           <div className="side2">
             <div className="flag">
               {levelMap[workshop.level]}
             </div>
-            <div style = {{margin: "5rem 0 0 0"}}>
-              <h3 style = {{margin: "0", color: "var(--secondary-color)"}}>
+            <div className = "wiif">
+              <h3>
                 Who is it for?
               </h3>
               <p className="card-text">

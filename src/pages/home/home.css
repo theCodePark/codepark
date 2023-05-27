@@ -1,3 +1,8 @@
+.home-top{
+  height:100vh;
+  flex-direction:column;
+}
+
 .three-words{
   color: var(--secondary-color);
   display: flex;
@@ -78,6 +83,30 @@
   position: absolute;
   top: 10rem;
   right: 5rem;
-  z-index: -1;
   width: 37rem;
+}
+
+@media (max-width: 768px){
+  .three-words{
+    font-size: 4rem !important;
+  }
+
+  .home-top{
+    height: calc(100vh - 6.5rem);
+  }
+
+  .hbox{
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    width: calc(100% - 2rem);		
+    margin: auto 1rem;	
+  }
+
+  .hbox > *{
+    width: calc(100% - 2rem);
+    padding: 0 1rem;
+  }
+  
+  
 }

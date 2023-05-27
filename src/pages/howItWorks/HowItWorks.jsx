@@ -1,7 +1,5 @@
 import './howItWorks.css'
 
-document.title = "CodePark | How It Works"
-
 const HowItWorks = () => {
   return (
     <section className='how-it-works'>

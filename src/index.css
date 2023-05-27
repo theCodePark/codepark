@@ -4,6 +4,7 @@ body{
   font-family: 'Questrial', sans-serif;
   --text-color: #333;
   --secondary-color: green;
+  --footer-color: #434B56;
   --blue: dodgerblue;
   --light-blue: #00aaff;
   --dark-blue: #0077ff;
@@ -12,6 +13,8 @@ body{
   --yellow: #ffcc00;
   --orange: #ff6600;
   margin: 0;
+  z-index: 1;
+  overflow-x: hidden;
 }
 
 
@@ -29,6 +32,7 @@ section{
   align-items: center;
   width: 100%;
   animation: fadeInAnimation ease 1.5s;
+  z-index: 1;
   /* animation-iteration-count: 1; */
   /* animation-fill-mode: forwards; */
 }
@@ -65,9 +69,20 @@ section .sub h3{
   section{
     flex-direction: column;
     align-items: center;
-    flex-wrap: wrap;
+    justify-content: center;
     width: 100%;
   }
+
+  section .sub{
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+    text-align: left;
+    width: calc(100% - 4rem);
+    margin: auto 2rem;
+  }
+
+ 
 
   
 }

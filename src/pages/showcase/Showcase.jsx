@@ -1,6 +1,6 @@
 import './showcase.css'
 
-document.title = "CodePark | Showcase"
+// document.title = "CodePark | Showcase"
 const Showcase = () => {
   return(
     <>

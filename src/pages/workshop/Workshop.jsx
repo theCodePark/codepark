@@ -2,7 +2,8 @@ import "./workshop.css";
 import * as workshopJson from "../../data/workshops.json";
 import WorkshopCard from "../../components/workshopCard/WorkshopCard";
 
-document.title = "CodePark | Workshops"
+// document.title = "CodePark | Workshops"
+
 const Workshop = () => {
 
   return(

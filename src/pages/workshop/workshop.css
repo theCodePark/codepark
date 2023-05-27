@@ -13,3 +13,11 @@
 .workshopPage-bottom {
   flex-wrap: wrap; flex-direction: column; width: 100%;
 }
+
+@media (max-width: 768px){
+  .workshopPage-top{
+    text-align: center;
+    width: calc(100% - 4rem);
+    margin: 0 2rem;
+  }
+}

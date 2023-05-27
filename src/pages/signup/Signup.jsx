@@ -7,7 +7,7 @@ import {collection, addDoc } from 'firebase/firestore';
 
 import {useNavigate} from 'react-router-dom';
 
-document.title = "CodePark | Sign Up"
+// document.title = "CodePark | Sign Up"
 const Signup = () => {
     const navigate = useNavigate();
   
@@ -35,6 +35,7 @@ const Signup = () => {
       const emailInput = document.getElementById('email');
       const classSelect = document.getElementById('class');
       const enrollmentRadioButtons = document.getElementsByName('enrollment');
+      const dateSelect = document.getElementById('date');
   
       let enrollmentType;
       enrollmentRadioButtons.forEach((radioButton) => {
@@ -50,6 +51,7 @@ const Signup = () => {
         email: emailInput.value,
         class: classSelect.value,
         enrollment: enrollmentType,
+        date: dateSelect.value,
       };
   
       addDocumentToFirebase(formData);
@@ -128,6 +130,8 @@ const Signup = () => {
           </div>
           <br />
           <button className = "green-button nav-link" style = {{cursor: "pointer"}} id = "sign-up-button" onClick={handleSignUp}>Sign Up</button>
+          <br />
+          <br />
         </form>
 
       </section>

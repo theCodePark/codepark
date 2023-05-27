@@ -1,22 +1,19 @@
-.container {
+.about-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
   margin-top: 7rem;
-  max-width: 45rem;
-  margin-left: auto;
-  margin-right: auto;
+  width: 100%;
   text-align: center;
 }
 
-.container h1 {
-  color: var(--secondary-color);
-  font-size: 3rem
-}
-
-.about-sec h3{
-  font-weight: normal;
-}
-
-.about-sec {
-  margin-bottom: 2rem;
+.content{
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-direction: column;
+  max-width: 45rem;
 }
 
 .instruc-cards{
@@ -24,4 +21,29 @@
   justify-content: space-between;
   flex-direction: row;
   width: 100%;
+}
+
+
+.about-section h1 {
+  color: var(--secondary-color);
+  font-size: 3rem;
+}
+
+.about-section h3{
+  font-weight: normal;
+}
+
+
+@media (max-width: 768px){
+  .about-section{
+    margin: 0 2rem;
+    width: calc(100% - 4rem);
+
+  }
+
+  .instruc-cards{
+    flex-direction: column;
+    align-items: center;
+  }
+
 }

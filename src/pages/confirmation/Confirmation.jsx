@@ -4,8 +4,6 @@ import {useEffect, useState} from 'react';
 import {useParams} from 'react-router-dom';
 import './confirmation.css';
 
-document.title = "CodePark | Confirmation"
-
 const Confirmation = () => {
 
   const [isConfirmed, setIsConfirmed] = useState(false);

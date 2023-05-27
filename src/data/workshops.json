@@ -10,21 +10,13 @@
       "syllabus": "https://docs.google.com/document/d/16YwWUKBiutp4D7xkGocmjlAoM75-z43gHQ2kf4fQe-g/preview"
     },
     {
-      "title": "Web Develeopment I: Intro to Web Development",
+      "title": "Web Development I: Intro to Web Development",
       "desc": "Learn everything you need to know to build web based application. You'll explore topics such as HTML, CSS, and JavaScript, the three foundational technologies of the web, and discover how to use them to design and structure web apps, add multimedia content, and make your site responsive to different devices. Additionally, you will acquire problem-solving skills and develop critical thinking abilities like a programmer, including following the Software Development Life Cycle (SDLC) and working collaboratively in teams.",
       "taught": "Ashwin Talwalkar",
       "rel-link": "/workshops/intro-to-web-dev",
       "level": "0",
       "for": "This curriculum is specifically designed for high school and later middle school students, and it does not require any previous programming experience.",
       "syllabus": "https://docs.google.com/document/d/1of2lCZW2P0P7XTEaQZt46v3_FLh1Vz4OL7PCdGpbHsc/preview"
-    },
-    {
-      "title": "Programming II: Introduction to Data Structures and Algorithms",
-      "desc": "This course is designed to take your coding expertise to the next level by delving into the fascinating world of data structures and algorithms.In this class, you will learn how to optimize your code and solve complex problems more efficiently. We'll cover essential data structures like arrays, linked lists, stacks, queues, trees, and graphs, exploring their implementation and practical applications. You'll gain a deep understanding of how these data structures work and how to choose the right one for specific programming scenarios",
-      "taught":"Vinay Siva",
-      "level": "2",
-      "for": "This curriculum is specifically designed for high school students who have taken AP Computer Science or equivalant. This course is in Java.",
-      "syllabus": "http://127.0.0.1:3000/workshops"
     },
     {
       "title": "Web Development II: Building Full Stack Applications in React.js",
@@ -34,6 +26,14 @@
       "for": "This course is designed for intermediate web developers who already have a basic understanding of web development concepts and experience with HTML, CSS, and JavaScript. This course is ideal for individuals who want to expand their skills and dive deeper into building full stack applications using React.js.",
       "syllabus": "https://docs.google.com/document/d/1vMbsc4q_IwVDaHmZKGK6O32WopW96_oOfhjuwySWk9Q/preview"
   
+    },
+    {
+      "title": "Programming II: Introduction to Data Structures and Algorithms",
+      "desc": "This course is designed to take your coding expertise to the next level by delving into the fascinating world of data structures and algorithms.In this class, you will learn how to optimize your code and solve complex problems more efficiently. We'll cover essential data structures like arrays, linked lists, stacks, queues, trees, and graphs, exploring their implementation and practical applications. You'll gain a deep understanding of how these data structures work and how to choose the right one for specific programming scenarios",
+      "taught":"Vinay Siva",
+      "level": "2",
+      "for": "This curriculum is specifically designed for high school students who have taken AP Computer Science or equivalant. This course is in Java.",
+      "syllabus": "https://docs.google.com/document/d/1uU07uB5QHrIWa39sOWVAVnweRAIqTh4HqlSZKOqLPJg/preview"
     }
   ]
 }
