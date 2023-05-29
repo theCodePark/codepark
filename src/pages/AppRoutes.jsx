@@ -33,24 +33,31 @@ const AppRoutes = () => {
       </div>
     )
   }
+
+  const FooterChosen = () => {
+    return window.innerWidth > 767 ? <Footer /> : <MobileFooter />
+  }
+
+  const NavbarChosen = () => {
+    return window.innerWidth > 767 ? <Navbar /> : <MobileNavbar />
+  }
+
   return(
     <>
       <Elements stripe = {stripeTestPromise}>
         <Suspense>
-        {window.innerWidth > 767 ? <Navbar /> : <MobileNavbar />}
           <Routes>
-            <Route path="/" element={<Home />} />
-            <Route path="workshops" element={<Workshop />} />
-            <Route path="how-it-works" element={<HowItWorks />} />
-            <Route path="about" element={<About />} />
-            <Route path="showcase" element={<Showcase />} />
-            <Route path="sign-up" element={<Signup />} />
+            <Route path="/" element={<><NavbarChosen /><Home /><FooterChosen /></>} />
+            <Route path="workshops" element={<><NavbarChosen /><Workshop /><FooterChosen /></>} />
+            <Route path="how-it-works" element={<><NavbarChosen /><HowItWorks /><FooterChosen /></>} />
+            <Route path="about" element={<><NavbarChosen /><About /><FooterChosen /></>} />
+            <Route path="showcase" element={<><NavbarChosen /><Showcase /><FooterChosen /></>} />
+            <Route path="sign-up" element={<><NavbarChosen /><Signup /><FooterChosen /></>} />
             <Route path="confirmation">
-              <Route path=":id" element={<Confirmation />} />
+              <Route path=":id" element={<><NavbarChosen /><Confirmation /><FooterChosen /></>} />
             </Route>
-            <Route path="*" element={<NotFound />} />
+            <Route path="*" element={<><NavbarChosen /><NotFound /><FooterChosen /></>} />
           </Routes>
-          {window.innerWidth > 767 ? <Footer /> : <MobileFooter />}
         </Suspense>
       </Elements>
     </>

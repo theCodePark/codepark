@@ -11,6 +11,7 @@ import { CardElement, useElements, useStripe } from "@stripe/react-stripe-js"
 
 import { useState } from 'react';
 import axios from 'axios';
+import {AiOutlineLoading} from 'react-icons/ai';
 
 const Signup = () => {
   const CARD_OPTIONS = {
@@ -30,6 +31,8 @@ const Signup = () => {
   const stripe = useStripe();
   const elements = useElements();
 
+  const [loading, setLoading] = useState(false);
+
   const checkIfInputEmailAndClassExists = async (emailInput, classInput) => {
     const querySnapshot = await getDocs(collection(getFirestoreInstance, "enrollments"));
     querySnapshot.forEach((doc) => {
@@ -43,11 +46,11 @@ const Signup = () => {
 
   const handleAddDocumentToFirebase = async(formData) => {
     try {
-      document.getElementById('sign-up-button').disabled = true;
       const docRef = await addDoc(collection(getFirestoreInstance, 'enrollments'), formData);
       document.getElementById('sign-up-button').disabled = false;
-      navigate(`/confirmation/${docRef.id}`);
+      setLoading(false)
 
+      navigate(`/confirmation/${docRef.id}`);
 
     } catch (error) {
       console.error('Error writing document: ', error);
@@ -59,32 +62,33 @@ const Signup = () => {
 
   const handleCreditCardAndFirebaseSubmit = async (e, formData) => {
     e.preventDefault()
+    setLoading(true);
+    document.getElementById('sign-up-button').disabled = true;
+    const {error, paymentMethod} = await stripe.createPaymentMethod({
+        type: "card",
+        card: elements.getElement(CardElement)
+    })
 
-      const {error, paymentMethod} = await stripe.createPaymentMethod({
-          type: "card",
-          card: elements.getElement(CardElement)
-      })
+    if(!error) {
+      try {
+        const {id} = paymentMethod
+        const response = await axios.post("https://codepark-server.herokuapp.com/payment", {
+            amount: 100, //price in cents cents
+            id: id
+        })
+      
 
-      if(!error) {
-        try {
-          const {id} = paymentMethod
-          const response = await axios.post("https://codepark-server.herokuapp.com/payment", {
-              amount: 10, //price in cents cents
-              id: id
-          })
-        
-
-          if(response.data.success) {
-            handleAddDocumentToFirebase(formData);
-          }
-          else{
-            console.log("not successful: " + response.data.message);
-            throw new Error("Unsuccessful payment: 82")
-          }
-
-        } catch (error) {
-          throw error;
+        if(response.data.success) {
+          handleAddDocumentToFirebase(formData);
         }
+        else{
+          console.log("not successful: " + response.data.message);
+          throw new Error("Unsuccessful payment: 82")
+        }
+
+      } catch (error) {
+        throw error;
+      }
     }
     else {
       console.log(error);
@@ -213,7 +217,7 @@ const Signup = () => {
            
           </div>
           <br />
-          <button className = "green-button nav-link" style = {{cursor: "pointer"}} id = "sign-up-button" onClick={handleSignUp}>Sign Up</button>
+          <button className = "green-button nav-link" style = {{cursor: "pointer", width: "7rem"}} id = "sign-up-button" onClick={handleSignUp}>{loading ? <AiOutlineLoading size = {25}/> : 'Sign Up'}</button>
          
         </form>
         <br />

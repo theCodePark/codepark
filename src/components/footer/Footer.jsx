@@ -5,6 +5,7 @@ import './footer.css'
 
 const Footer = () => {
   const [footerName, setFooterName] = useState("footer");
+
   useEffect(() => {
     const url = window.location.href;
     const shortRoutes = ["showcase", "confirmation"]    
@@ -16,6 +17,7 @@ const Footer = () => {
       }
     }
   }, []);
+  
   return(
     <footer className = {footerName} >
       <div>
