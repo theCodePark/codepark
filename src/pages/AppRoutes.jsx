@@ -21,7 +21,7 @@ const HowItWorks = lazy(() => import('./howItWorks/HowItWorks'));
 
 const AppRoutes = () => {
 
-  const stripeTestPromise = loadStripe("pk_test_51NAky3Cf7CaIpKG5pcBTYVPZoeuwWUXrStPsGsDvqwFb83krcrALmsuIByuXlFsPpFLyTIgm3dhndGcY6SMgML1K00X0qsvd1H");
+  const stripeTestPromise = loadStripe("pk_live_51NAky3Cf7CaIpKG5pcBTYVPZoeuwWUXrStPsGsDvqwFb83krcrALmsuIByuXlFsPpFLyTIgm3dhndGcY6SMgML1K00X0qsvd1H");
 
   const NotFound = () => {
     return(

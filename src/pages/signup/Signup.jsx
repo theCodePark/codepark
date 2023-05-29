@@ -68,9 +68,9 @@ const Signup = () => {
       if(!error) {
         try {
           const {id} = paymentMethod
-
-          const response = await axios.post("http://localhost:4000/payment", {
-              amount: 1000,
+          console.log(id);
+          const response = await axios.post("https://codepark-server.herokuapp.com/payment", {
+              amount: 10, //price in cents cents
               id: id
           })
         
@@ -87,6 +87,7 @@ const Signup = () => {
         }
     }
     else {
+      console.log(error);
       throw new Error("Unsuccessful payment")
     }
   }
@@ -215,7 +216,7 @@ const Signup = () => {
           <button className = "green-button nav-link" style = {{cursor: "pointer"}} id = "sign-up-button" onClick={handleSignUp}>Sign Up</button>
          
         </form>
-
+        <br />
       </section>
     </>
   )
