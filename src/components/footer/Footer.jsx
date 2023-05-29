@@ -1,18 +1,21 @@
 import { BsInstagram, BsGithub, BsLinkedin } from 'react-icons/bs';
+import { useState, useEffect } from 'react';
+
 import './footer.css'
 
-const url = window.location.href;
-const shortRoutes = ["showcase", "confirmation"]
-let footerName = "footer"
-
-for(let i = 0; i < shortRoutes.length; i++) {
-  if(url.includes(shortRoutes[i])) {
-    footerName += " bottom"
-    break;
-  }
-}
 const Footer = () => {
+  const [footerName, setFooterName] = useState("footer");
+  useEffect(() => {
+    const url = window.location.href;
+    const shortRoutes = ["showcase", "confirmation"]    
 
+    for(let i = 0; i < shortRoutes.length; i++) {
+      if(url.includes(shortRoutes[i])) {
+        setFooterName("footer bottom");
+        break;
+      }
+    }
+  }, []);
   return(
     <footer className = {footerName} >
       <div>

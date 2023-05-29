@@ -22,7 +22,7 @@ body{
   border-radius: 12px;
   padding: 0.5rem 1rem;
   background-color: var(--secondary-color);
-  color: white;
+  color: white !important;
   border: none;
 }
 

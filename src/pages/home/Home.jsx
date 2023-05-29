@@ -28,7 +28,7 @@ const Home = () => {
             </div>
             <div className = "hbox">
               <div style = {{display: "flex", flexWrap: "wrap", flexDirection: "column"}}>
-                <img src = "images/4student.png" alt = "image for built by studens for students" />
+                <img src = "" alt = "image for built by studens for students" />
                 <h3>being built by students, for students</h3>
                 <p>We empathize with students and strive to make learning both fun and challenging.</p>
               </div>

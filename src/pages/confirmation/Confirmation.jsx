@@ -29,7 +29,7 @@ const Confirmation = () => {
       isConfirmed ?  
       <>
         <h1>CodePark Confirmation</h1>
-        <h3>Welcome to <b style = {{color:" var(--secondary-color)"}}>CodePark</b> and thank you for signing up! Your information has been successfully submitted. We will email you shortly with a reciept and confirmation. If there is any issue please contact us at <b>atalwalkar719@gmail.com</b></h3>
+        <h3>Welcome to <b style = {{color:" var(--secondary-color)"}}>CodePark</b> and thank you for signing up! Your information has been successfully submitted. We will email you shortly with a reciept and confirmation. If there is any issue please contact us at <b>atalwalkar719@gmail.com</b>. To enroll in another class, simply submit another form <a href = "sign-up">here</a></h3>
       </>
       :
       <h1>This URL Does Not Exist</h1>

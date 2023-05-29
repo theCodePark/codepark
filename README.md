@@ -82,6 +82,8 @@ In the project directory, you can run the following scripts:
 - `npm run dev` or `yarn dev`: Starts the development server.
 - `npm run build` or `yarn build`: Builds the application for production.
 - `npm run serve` or `yarn serve`: Serves the production build locally.
+- `npm run lint` or `yarn lint`: Runs ESLint to check for linting errors.
+- `npm run deploy` or `yarn deploy`: Deploys the application to Firebase Hosting.
 
 Make sure to refer to the Vite documentation for more information on the available configuration options and additional scripts.
 
