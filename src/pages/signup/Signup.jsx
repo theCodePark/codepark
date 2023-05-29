@@ -68,7 +68,6 @@ const Signup = () => {
       if(!error) {
         try {
           const {id} = paymentMethod
-          console.log(id);
           const response = await axios.post("https://codepark-server.herokuapp.com/payment", {
               amount: 10, //price in cents cents
               id: id
@@ -79,7 +78,8 @@ const Signup = () => {
             handleAddDocumentToFirebase(formData);
           }
           else{
-            throw new Error("Unsuccessful payment")
+            console.log("not successful: " + response.data.message);
+            throw new Error("Unsuccessful payment: 82")
           }
 
         } catch (error) {
@@ -88,7 +88,7 @@ const Signup = () => {
     }
     else {
       console.log(error);
-      throw new Error("Unsuccessful payment")
+      throw new Error("Unsuccessful payment: 91")
     }
   }
   
