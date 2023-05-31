@@ -25,7 +25,7 @@ const AppRoutes = () => {
 
   const NotFound = () => {
     return(
-      <div style = {{textAlign: "center", margin: "15rem 2rem", width: "calc(100% - 4rem)", display: "flex", flexDirection: "column", justifyContent: "center", alignItems: "center"}}> 
+      <div style = {{textAlign: "center", margin: "12.75rem 2rem", width: "calc(100% - 4rem)", display: "flex", flexDirection: "column", justifyContent: "center", alignItems: "center"}}> 
         <h1 style = {{color: "var(--secondary-color)", fontSize: "3rem"}}>404 - Page Not Found</h1>
         <p>The page you are looking for does not exist.</p>
         <br />

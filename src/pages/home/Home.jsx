@@ -1,6 +1,8 @@
 import './home.css'
 
-// document.title = "CodePark"
+import students from '../../images/students.png'
+import handsOnLearning from '../../images/handsOnLearning.png'
+import creatity from '../../images/creativity.png'
 const Home = () => {
     return (
         <>
@@ -27,22 +29,23 @@ const Home = () => {
               </h2>
             </div>
             <div className = "hbox">
-              <div style = {{display: "flex", flexWrap: "wrap", flexDirection: "column"}}>
-                <img src = "" alt = "image for built by studens for students" />
+              <div style = {{display: "flex", flexWrap: "wrap", flexDirection: "column" }}>
+                <img src = {students} alt = "image for built by studens for students" />
                 <h3>being built by students, for students</h3>
                 <p>We empathize with students and strive to make learning both fun and challenging.</p>
               </div>
 
               <div style = {{display: "flex", flexWrap: "wrap", flexDirection: "column"}}>
+                {window.innerWidth < 768 && <img src = {handsOnLearning} alt = "image for hands on learning" />}
                 <h3>hands on learning</h3>
                 <p>At CodePark, we don't just teach to code, but to problem solve, work as a team, & create application via our project based learning methods</p>
-                <img src = "" alt = "image for hands on learning" />
+                {window.innerWidth >= 768 && <img src = {handsOnLearning} alt = "image for hands on learning" />}
               </div>
 
               <div style = {{display: "flex", flexWrap: "wrap", flexDirection: "column"}}>
-                <img src = "" alt = "image for creativity" />
+                <img src = {creatity} alt = "image for creativity" />
                 <h3>creativity</h3>
-                <p>At CodePark, our students are not just passive learners, but active creators. They will have the opportunity to design, implement, and ideate their very own application during our program. </p>
+                <p>CodePark students are not just passive learners, but active creators. They will have the opportunity to design, implement, and ideate their very own application during our program. </p>
               </div>
             </div>
 

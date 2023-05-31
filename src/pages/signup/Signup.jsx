@@ -32,15 +32,17 @@ const Signup = () => {
   const elements = useElements();
 
   const [loading, setLoading] = useState(false);
+  const [errorMessage, setErrorMessage] = useState("");
 
   const checkIfInputEmailAndClassExists = async (emailInput, classInput) => {
     const querySnapshot = await getDocs(collection(getFirestoreInstance, "enrollments"));
     querySnapshot.forEach((doc) => {
-      if(doc.data().email === emailInput && doc.data().class === classInput ) {
+      if(doc.data().email === emailInput && doc.data().class === classInput) {
         console.log(doc.data().email + " " + doc.data().class);
         return true;
       }
     });
+    
     return false;
   }
 
@@ -73,7 +75,7 @@ const Signup = () => {
       try {
         const {id} = paymentMethod
         const response = await axios.post("https://codepark-server.herokuapp.com/payment", {
-            amount: 100, //price in cents cents
+            amount: price * 100, //price in cents
             id: id
         })
       
@@ -83,16 +85,20 @@ const Signup = () => {
         }
         else{
           console.log("not successful: " + response.data.message);
-          throw new Error("Unsuccessful payment: 82")
+          // setErrorMessage(response.data.message);
+          setErrorMessage("Payment is currently disabled. Please contact us at atalwalkar719@gmail.com for more information.")
         }
 
       } catch (error) {
+        setErrorMessage(error.message);
         throw error;
       }
     }
     else {
       console.log(error);
-      throw new Error("Unsuccessful payment: 91")
+      // setErrorMessage(error.message);
+      setErrorMessage("Payment is currently disabled. Please contact us at atalwalkar719@gmail.com for more information.")
+      throw new Error("Unsuccessful payment")
     }
   }
   
@@ -126,10 +132,10 @@ const Signup = () => {
       timestamp: Timestamp.now()
     };
 
-    // if(checkIfInputEmailAndClassExists(formData.email, formData.class)) {
-    //   //alert("This email is already registered for this particular class");
-    //   return;
-    // }
+    if(checkIfInputEmailAndClassExists(formData.email, formData.class)) {
+      setErrorMessage("You have already signed up for this class! Select another option")
+      return;
+    }
     
     handleCreditCardAndFirebaseSubmit(event, formData);
 
@@ -197,7 +203,7 @@ const Signup = () => {
             <label hmtlfor="enrollment">Enrollment Type:</label>
             <div className = "radio-group">
               <label hmtlfor="enrollment-group">Group</label>
-              <input type="radio" id="enrollment-group" name="enrollment" value="group" required onClick = {() => setPrice(800)}/>
+              <input type="radio" id="enrollment-group" name="enrollment" value="group" required onClick = {() => setPrice(750)}/>
             </div>
             <div className = "radio-group">
               <label hmtlfor="enrollment-1on1">1 on 1</label>
@@ -216,6 +222,8 @@ const Signup = () => {
             }
            
           </div>
+          <br />
+          {(errorMessage !== "") && <h2 className = "error-message">{errorMessage}</h2>}
           <br />
           <button className = "green-button nav-link" style = {{cursor: "pointer", width: "7rem"}} id = "sign-up-button" onClick={handleSignUp}>{loading ? <AiOutlineLoading size = {25}/> : 'Sign Up'}</button>
          

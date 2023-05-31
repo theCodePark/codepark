@@ -41,7 +41,7 @@ const HowItWorks = () => {
           Pricing
         </h2>
         <h3>
-          The enrollment fee for each session is $800 for group learning and $1000 for one-on-one learning all included. This is a one-time fee that covers the entire session.
+          The enrollment fee for each session is $750 for group learning and $1000 for one-on-one learning all included. This is a one-time fee that covers the entire session.
         </h3>
       </div>
     </section>

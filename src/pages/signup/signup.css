@@ -49,6 +49,12 @@ select {
   width: 100px;
 }
 
+.error-message{
+  color: red;
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
 @media (max-width: 768px){
   .signup-section {
     margin: 0 2rem; 
