@@ -38,7 +38,6 @@ const Signup = () => {
     const querySnapshot = await getDocs(collection(getFirestoreInstance, "enrollments"));
     querySnapshot.forEach((doc) => {
       if(doc.data().email === emailInput && doc.data().class === classInput) {
-        console.log(doc.data().email + " " + doc.data().class);
         return true;
       }
     });
@@ -56,6 +55,7 @@ const Signup = () => {
 
     } catch (error) {
       console.error('Error writing document: ', error);
+      setErrorMessage("Your data could not be saved right now. Please try again later.");
     }
 
 
