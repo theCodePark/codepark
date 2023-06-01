@@ -31,8 +31,8 @@ label {
 input,
 select {
   width: 100%;
-  padding: 0.5rem;
-  border: 1px solid #ccc;
+  padding: 1rem;
+  border: 2px solid #ccc;
   border-radius: 4px;
   font-size: 1rem;
 }
@@ -59,10 +59,20 @@ select {
   .signup-section {
     margin: 0 2rem; 
     width: calc(100% - 4rem);
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    display: flex;
   }
 
   .signup-form {
     width: 100%;
     margin: 0 auto;
+  }
+
+  input,
+  select {  
+  /* width: 100%; */
+  padding: 0.5rem;
   }
 }

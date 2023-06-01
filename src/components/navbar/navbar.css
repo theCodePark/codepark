@@ -107,6 +107,7 @@
 .hamburger-menu-button{
   background-color: transparent;
   border: none;
+  color: var(--text-color) !important;
 }
 
 @media (max-width: 768px){

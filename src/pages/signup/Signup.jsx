@@ -33,6 +33,7 @@ const Signup = () => {
 
   const [loading, setLoading] = useState(false);
   const [errorMessage, setErrorMessage] = useState("");
+  const [price, setPrice] = useState(0);
 
   const checkIfInputEmailAndClassExists = async (emailInput, classInput) => {
     const querySnapshot = await getDocs(collection(getFirestoreInstance, "enrollments"));
@@ -140,8 +141,6 @@ const Signup = () => {
     handleCreditCardAndFirebaseSubmit(event, formData);
 
   };
-
-  const [price, setPrice] = useState(0);
 
   return(
     <>
