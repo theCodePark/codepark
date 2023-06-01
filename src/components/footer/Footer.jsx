@@ -44,9 +44,9 @@ const Footer = () => {
 
       <div style = {{alignItems: "center"}}>
         <h4>Follow Us</h4>
-        <a href="#" target="_blank"><BsInstagram size = {25}/></a>
-        <a href="#" target="_blank"><BsGithub size = {25}/></a>
-        <a href="#" target="_blank"><BsLinkedin size = {25}/></a>
+        {/* <a href="" target="_blank"><BsInstagram size = {25}/></a> */}
+        <a href="https://github.com/theCodePark" target="_blank"><BsGithub size = {25}/></a>
+        {/* <a href="#" target="_blank"><BsLinkedin size = {25}/></a> */}
       </div>
 
       <h3 className="copyright">

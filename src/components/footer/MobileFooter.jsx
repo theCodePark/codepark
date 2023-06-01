@@ -40,9 +40,9 @@ const MobileFooter = () => {
 
       <h4>Follow Us</h4>
       <div className='footer-horizontal' style = {{alignItems: "center"}}>
-        <a href="#" target="_blank"><BsInstagram size = {25}/></a>
-        <a href="#" target="_blank"><BsGithub size = {25}/></a>
-        <a href="#" target="_blank"><BsLinkedin size = {25}/></a>
+        {/* <a href="" target="_blank"><BsInstagram size = {25}/></a> */}
+        <a href="https://github.com/theCodePark" target="_blank"><BsGithub size = {25}/></a>
+        {/* <a href="#" target="_blank"><BsLinkedin size = {25}/></a> */}
       </div>
 
       <h4>
