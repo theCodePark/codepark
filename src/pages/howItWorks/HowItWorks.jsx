@@ -28,7 +28,7 @@ const HowItWorks = () => {
         </h3>
         <h3 style = {{borderBottom: "2px solid var(--secondary-color)"}}>Group Learning</h3>
         <h3>
-          In group learning, students join a small group of their peers. This format encourages collaboration, teamwork, and peer-to-peer learning. The enrollment fee for group learning is $1000 per session.
+          In group learning, students join a small group of their peers. This format encourages collaboration, teamwork, and peer-to-peer learning.
         </h3>
         <h3 style = {{borderBottom: "2px solid var(--secondary-color)"}}>One-on-One Learning</h3>
         <h3>
