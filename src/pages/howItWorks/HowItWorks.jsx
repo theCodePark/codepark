@@ -32,7 +32,7 @@ const HowItWorks = () => {
         </h3>
         <h3 style = {{borderBottom: "2px solid var(--secondary-color)"}}>One-on-One Learning</h3>
         <h3>
-          For students who prefer personalized attention, we offer one-on-one learning sessions. In this format, a dedicated instructor provides individualized instruction tailored to the student's specific needs and learning pace. The enrollment fee for one-on-one learning is $1250 per session.
+          For students who prefer personalized attention, we offer one-on-one learning sessions. In this format, a dedicated instructor provides individualized instruction tailored to the student's specific needs and learning pace.
         </h3>
         <h3>
           No matter which option you choose, our experienced instructors are committed to guiding and supporting you throughout your coding journey. We provide a nurturing and inclusive learning environment where students can develop their coding skills, explore their creativity, and gain confidence in their abilities.
