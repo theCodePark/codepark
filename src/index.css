@@ -90,14 +90,13 @@ section .sub h3{
 
   section .sub{
     display: flex;
-    justify-content: flex-start;
+    justify-content: center;
     flex-direction: column;
     text-align: left;
-    width: calc(100% - 4rem);
-    margin: auto 2rem;
+    width: calc(100% - 3rem);
+    margin: auto 1.5rem;
   }
 
- 
 
   
 }

@@ -6,13 +6,13 @@ const HowItWorks = () => {
       <h1>How CodePark Classes Work</h1>
       <div>
         <h3>
-          CodePark offers coding classes designed to provide an immersive and engaging learning experience for students. Our classes are conducted at the Mountain View Community Center, and each session lasts for three weeks, from Monday to Friday. At the end of each session, students will have the opportunity to showcase their projects to their peers and parents.
+          CodePark offers coding classes designed to provide an immersive and engaging learning experience for students. Our classes are conducted at the Mountain View Community Center, and each session lasts for two weeks, from Monday to Friday. At the end of each session, students will have the opportunity to showcase their projects to their peers and parents.
         </h3>
         <h2>
           Class Structure
         </h2>
         <h3>
-          During each session, students attend classes for 2 hours every day. The classes are structured to incorporate project-based learning, where students actively work on coding projects to apply what they have learned.
+          During each session, students attend classes for 4-5 hours every day. The classes are structured to incorporate project-based learning, where students actively work on coding projects to apply what they have learned.
         </h3>
         <h2>
           Class Schedule
