@@ -12,7 +12,7 @@
     "deploy": "firebase deploy"
   },
   "dependencies": {
-    "@stripe/react-stripe-js": "^2.1.0",
+    "@stripe/react-stripe-js": "^1.11.0",
     "@stripe/stripe-js": "^1.53.0",
     "axios": "^1.4.0",
     "firebase": "^9.22.0",

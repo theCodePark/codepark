@@ -89,6 +89,7 @@
 @media (max-width: 768px){
   .three-words{
     font-size: 3.75rem !important;
+    text-align: center;
   }
 
   .home-top{
