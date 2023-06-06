@@ -205,8 +205,8 @@ const Signup = () => {
               <input type="radio" id="enrollment-group" name="enrollment" value="group" required onClick = {() => setPrice(1000)}/>
             </div>
             <div className = "radio-group">
-              <label hmtlfor="enrollment-1on1">1 on 1</label>
-              <input type="radio" id="enrollment-1on1" name="enrollment" value="1on1" required onClick = {() => setPrice(1250)}/>
+              <label hmtlfor="enrollment-1on1">1 on 1 (online)</label>
+              <input type="radio" id="enrollment-1on1" name="enrollment" value="1on1" required onClick = {() => setPrice(1750)}/>
             </div>
           </div>
           <br />

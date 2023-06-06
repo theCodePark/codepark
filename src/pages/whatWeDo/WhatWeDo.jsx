@@ -33,7 +33,7 @@ const WhatWeDo = () => {
         </h3>
         <h3 style = {{borderBottom: "2px solid var(--secondary-color)"}}>One-on-One Learning</h3>
         <h3>
-          For students who prefer personalized attention, we offer one-on-one learning sessions. In this format, a dedicated instructor provides individualized instruction tailored to the student's specific needs and learning pace.
+          For students who prefer personalized attention, we offer one-on-one <b>online</b> learning sessions. In this format, a dedicated instructor provides individualized instruction tailored to the student's specific needs and learning pace.
         </h3>
         <h3>
           No matter which option you choose, our experienced instructors are committed to guiding and supporting you throughout your coding journey. We provide a nurturing and inclusive learning environment where students can develop their coding skills, explore their creativity, and gain confidence in their abilities.
@@ -42,7 +42,7 @@ const WhatWeDo = () => {
           Pricing
         </h2>
         <h3>
-          The enrollment fee for each session is $1000 for group learning and $1250 for one-on-one learning all included. This is a one-time fee that covers the entire session.
+          The enrollment fee for each session is $1000 for group learning and $1750 for one-on-one learning all included. This is a one-time fee that covers the entire session.
         </h3>
       </div>
     </section>

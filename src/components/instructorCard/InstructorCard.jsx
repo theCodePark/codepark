@@ -2,15 +2,16 @@ import './instructorCard.css'
 import { BsLinkedin, BsGlobe } from "react-icons/bs";
 import { HiOutlineMail } from "react-icons/hi";
 
-const InstructorCard = ({ name, imageSrc, linkdenLink, emailLink, personalPortfolioLink }) => {
+const InstructorCard = ({ name, program, school, imageSrc, linkdenLink, emailLink, personalPortfolioLink }) => {
 
   return (
     <div className="instructor-card">
       <img className="instructor-image" src={imageSrc} alt={`Photo of ${name}`} />
       <div className="instructor-details">
         <h3 className="instructor-name">{name}</h3>
-        {/* <p className="instructor-bio">{bio}</p> */}
-        
+        <br />
+        <b className="instructor-bio">{school}</b>
+        <p className="instructor-bio">{program}</p>
         <div className="rowbox">
           {linkdenLink && <a href={linkdenLink} target="_blank" rel="noreferrer">
             <BsLinkedin size = {25} />
