@@ -44,6 +44,23 @@ const WhatWeDo = () => {
         <h3>
           The enrollment fee for each session is $1000 for group learning and $1750 for one-on-one learning all included. This is a one-time fee that covers the entire session.
         </h3>
+        <h2>What You Need</h2>
+        <h3>
+          <ul>
+            <li>A laptop or desktop computer (Any modern specs will do)</li>
+            <li>Webcam and microphone (if you are enrolling in one-on-one learning)</li>
+            <li>Any specs will do, as long as the computer is able to run a web browser</li>
+            <li>Charger and cables</li>
+            <li>A Lunch</li>
+            <li>An open mind and a willingness to learn!</li>
+          </ul>
+        </h3>
+        <h2>
+          Refund Policy
+        </h2>
+        <h3>
+          We offer a full refund if you cancel your enrollment at least 3 days before the start of the session. No refunds will be issued after this point.
+        </h3>
       </div>
     </section>
   );

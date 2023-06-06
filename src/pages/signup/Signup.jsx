@@ -9,11 +9,12 @@ import {useNavigate} from 'react-router-dom';
 
 import { CardElement, useElements, useStripe } from "@stripe/react-stripe-js"
 
-import { useState } from 'react';
+import {useState } from 'react';
 import axios from 'axios';
 import {AiOutlineLoading} from 'react-icons/ai';
 
 const Signup = () => {
+
   const CARD_OPTIONS = {
     iconStyle: "solid",
     style: {
@@ -35,14 +36,18 @@ const Signup = () => {
   const [errorMessage, setErrorMessage] = useState("");
   const [price, setPrice] = useState(0);
 
-  const checkIfInputEmailAndClassExists = async (emailInput, classInput) => {
+  const [dates, setDates] = useState([]);
+  
+  const checkIfInputEmailAndClassExists = async (emailInput, dateInput) => {
     const querySnapshot = await getDocs(collection(getFirestoreInstance, "enrollments"));
     querySnapshot.forEach((doc) => {
-      if(doc.data().email === emailInput && doc.data().class === classInput) {
+      if(doc.data().email === emailInput && doc.data().date === dateInput) {
+        setErrorMessage("You have already signed up for the slot " + dateInput + ". Please select a different slot or contact us at")
         return true;
       }
     });
     
+    setErrorMessage("");
     return false;
   }
 
@@ -61,7 +66,6 @@ const Signup = () => {
 
 
   };
-
 
   const handleCreditCardAndFirebaseSubmit = async (e, formData) => {
     e.preventDefault()
@@ -133,13 +137,17 @@ const Signup = () => {
       timestamp: Timestamp.now()
     };
 
-    if(checkIfInputEmailAndClassExists(formData.email, formData.class)) {
-      setErrorMessage("You have already signed up for this class! Select another option")
+    if(checkIfInputEmailAndClassExists(formData.email, formData.date)) {
+      // console.log("Email and class already exists");
       return;
     }
     
     handleCreditCardAndFirebaseSubmit(event, formData);
 
+  };
+
+  const handleChange = (event) => {
+    setDates(dateJson.classDateMap[event.target.value] || []);
   };
 
   return(
@@ -171,7 +179,7 @@ const Signup = () => {
 
           <div className = "form-group">
             <label hmtlfor="class">Class Selection:</label>
-            <select id="class" name="class" required>
+            <select id="class" name="class" required onChange={handleChange}>
               <option value="">Select a class</option>
               {
                 workshopsJson.workshops.map((workshop, index) => {
@@ -182,19 +190,15 @@ const Signup = () => {
               }
             </select>
           </div>
-
+          
           <div className = "form-group">
             <label hmtlfor="date">Date Selection:</label>
             <select id="date" name="date" required>
               <option value="">Select a section</option>
               {
-                dateJson.dates.map((date, index) => {
-                    const stringDate = date.start + " - " + date.end;
-                    return(
-                    <option key = {index} value={date.title}>{stringDate}</option>
-                    )
-                })
-              }
+                dates.map((date, index) => {
+                return <option key={index} value={date}>{date}</option>
+              })}
             </select>
           </div>
 

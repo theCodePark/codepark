@@ -88,12 +88,12 @@
 
 @media (max-width: 768px){
   .three-words{
-    text-align: center;
+    text-align: left;
     font-size: 3.5rem !important;
   }
 
   .home-top{
-    height: 100vh;
+    height: calc(100vh - 6.75rem);
   }
 
   .hbox{

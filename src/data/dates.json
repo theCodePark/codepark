@@ -1,16 +1,8 @@
 {
-  "dates": [
-    {
-      "start": "June 12th",
-      "end": "July 7th"
-    },
-    {
-      "start": "July 10rd",
-      "end": "July 28th"
-    },
-    {
-      "start": "July 31st",
-      "end": "August 18th"
-    }
-  ]
+  "classDateMap": {
+    "Programming I: Introduction to Programming": ["June 19th - June 30th", "July 3rd - July 14th"],
+    "Programming II: Introduction to Data Structures and Algorithms":["June 19th - June 30th", "July 3rd - July 14th"],
+    "Web Development I: Intro to Web Development": ["July 17th - July 28th", "July 31st - August 11th"],
+    "Web Development II: Building Full Stack Applications in React.js": ["July 17th - July 28th", "July 31st - August 11th"]
+  }
 }
