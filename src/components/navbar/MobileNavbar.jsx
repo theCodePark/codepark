@@ -16,7 +16,7 @@ const MobileNavbar = () => {
           <div className='nav-popup'>
             <GiCancel size = {30} onClick = {toggleMenu} />
             <a className="nav-link" href="/workshops">Workshops</a>
-            <a className="nav-link" href="/how-it-works">How it Works</a>
+            <a className="nav-link" href="/what-we-do">What We Do</a>
             <a className="nav-link" href="/about">About Us</a>
             <a className="nav-link" href="/showcase">Showcase</a>
             <a className="nav-link green-button" href="/sign-up">Sign Up</a>

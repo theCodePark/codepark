@@ -1,10 +1,11 @@
-import './howItWorks.css'
+import './whatWeDo.css'
 
-const HowItWorks = () => {
+const WhatWeDo = () => {
   return (
-    <section className='how-it-works'>
-      <h1>How CodePark Classes Work</h1>
+    <section className='what-we-do'>
+      <h1>What We Do</h1>
       <div>
+        <h2>How CodePark Classes Work</h2>
         <h3>
           CodePark offers coding classes designed to provide an immersive and engaging learning experience for students. Our classes are conducted at the Mountain View Community Center, and each session lasts for two weeks, from Monday to Friday. At the end of each session, students will have the opportunity to showcase their projects to their peers and parents.
         </h3>
@@ -41,11 +42,11 @@ const HowItWorks = () => {
           Pricing
         </h2>
         <h3>
-          The enrollment fee for each session is $750 for group learning and $1000 for one-on-one learning all included. This is a one-time fee that covers the entire session.
+          The enrollment fee for each session is $1000 for group learning and $1250 for one-on-one learning all included. This is a one-time fee that covers the entire session.
         </h3>
       </div>
     </section>
   );
 };
 
-export default HowItWorks;
+export default WhatWeDo;

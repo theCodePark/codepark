@@ -11,7 +11,7 @@ const Navbar = () => {
         <a className="nav-link" href="/workshops">Workshops</a>
       </li>
       <li className="nav-item underline-transition">
-        <a className="nav-link" href="/how-it-works">How it Works</a>
+        <a className="nav-link" href="/what-we-do">What We Do</a>
       </li>
       <li className="nav-item underline-transition">
         <a className="nav-link" href="/about">About Us</a>

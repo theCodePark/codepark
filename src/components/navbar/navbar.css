@@ -2,15 +2,15 @@
   display: flex;
   justify-content: space-between;
   align-items: stretch;
-  background-color: #fff;
+  background-color: white;
   padding: 10px;
   box-shadow: none;
-
-  overflow: hidden;
+  overflow-x: hidden;
   position: fixed;
   top: 0;
   width: calc(100% - 20px);
-  z-index: 1000;
+  z-index: 9999;
+
 }
 
 /* Logo styles */
@@ -60,7 +60,7 @@
 }
 
 .mobile-navbar {
-  /* position: fixed; */
+  position: fixed;
   top: 0;
   width: 100%;
   display: flex;
@@ -69,6 +69,7 @@
   padding: 10px;
   width: calc(100% - 20px);
   z-index: 9999;
+  background-color: white;
 
 }
 

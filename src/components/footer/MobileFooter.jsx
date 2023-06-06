@@ -20,7 +20,7 @@ const MobileFooter = () => {
       <div className='footer-horizontal'>
         <a href="/">Home</a><span className = "divider-block"> | </span>
         <a href="/workshops">Workshops</a><span className = "divider-block"> | </span>
-        <a href="/how-it-works">How it Works</a><span className = "divider-block"> | </span>
+        <a href="/what-we-do">What We Do</a><span className = "divider-block"> | </span>
         <a href="/about">About Us</a><span className = "divider-block"> | </span>
         <a href="/showcase">Showcase</a><span className = "divider-block"> | </span>
         <a href="/sign-up">Sign Up</a>

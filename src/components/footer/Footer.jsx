@@ -24,7 +24,7 @@ const Footer = () => {
         <h4>Site Map</h4>
         <a href="/">Home</a>
         <a href="/workshops">Workshops</a>
-        <a href="/how-it-works">How it Works</a>
+        <a href="/what-we-do">What We Do</a>
         <a href="/about">About Us</a>
         <a href="/showcase">Showcase</a>
         <a href="/sign-up">Sign Up</a>

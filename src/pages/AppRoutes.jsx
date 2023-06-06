@@ -16,7 +16,7 @@ const About = lazy(() => import('./about/About'));
 const Showcase = lazy(() => import('./showcase/Showcase'));
 const Signup = lazy(() => import('./signup/Signup'));
 const Confirmation = lazy(() => import('./confirmation/Confirmation'));
-const HowItWorks = lazy(() => import('./howItWorks/HowItWorks'));
+const WhatWeDo = lazy(() => import('./whatWeDo/WhatWeDo'));
 
 
 const AppRoutes = () => {
@@ -49,7 +49,7 @@ const AppRoutes = () => {
           <Routes>
             <Route path="/" element={<><NavbarChosen /><Home /><FooterChosen /></>} />
             <Route path="workshops" element={<><NavbarChosen /><Workshop /><FooterChosen /></>} />
-            <Route path="how-it-works" element={<><NavbarChosen /><HowItWorks /><FooterChosen /></>} />
+            <Route path="what-we-do" element={<><NavbarChosen /><WhatWeDo /><FooterChosen /></>} />
             <Route path="about" element={<><NavbarChosen /><About /><FooterChosen /></>} />
             <Route path="showcase" element={<><NavbarChosen /><Showcase /><FooterChosen /></>} />
             <Route path="sign-up" element={<><NavbarChosen /><Signup /><FooterChosen /></>} />

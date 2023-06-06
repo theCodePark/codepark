@@ -1,4 +1,4 @@
-.how-it-works{
+.what-we-do{
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -8,16 +8,16 @@
   text-align: center;
 }
 
-.how-it-works h1 {
+.what-we-do h1 {
   color: var(--secondary-color);
   font-size: 3rem;
 }
 
-.how-it-works h3{
+.what-we-do h3{
   font-weight: normal;
 }
 
-.how-it-works div{
+.what-we-do div{
   display: flex;
   justify-content: flex-start;
   align-items: center;
@@ -26,7 +26,7 @@
 }
 
 @media (max-width: 768px){
-  .how-it-works{
+  .what-we-do{
     margin: 0 2rem;
     width: calc(100% - 4rem);
 
