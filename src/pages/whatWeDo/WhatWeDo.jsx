@@ -13,7 +13,7 @@ const WhatWeDo = () => {
           Class Structure
         </h2>
         <h3>
-          During each session, students attend classes for 4-5 hours every day. The classes are structured to incorporate project-based learning, where students actively work on coding projects to apply what they have learned.
+          During each session, students attend classes for 4-5 hours every day (online students will be scheduled in the afternoon for 3 hours). The classes are structured to incorporate project-based learning, where students actively work on coding projects to apply what they have learned.
         </h3>
         <h2>
           Class Schedule
@@ -42,16 +42,15 @@ const WhatWeDo = () => {
           Pricing
         </h2>
         <h3>
-          The enrollment fee for each session is $1000 for group learning and $1750 for one-on-one learning all included. This is a one-time fee that covers the entire session.
+          The enrollment fee for each session is $1000 for group learning and $1500 for one-on-one learning all included. This is a one-time fee that covers the entire session.
         </h3>
         <h2>What You Need</h2>
         <h3>
           <ul>
             <li>A laptop or desktop computer (Any modern specs will do)</li>
-            <li>Webcam and microphone (if you are enrolling in one-on-one learning)</li>
-            <li>Any specs will do, as long as the computer is able to run a web browser</li>
+            <li>Webcam and microphone (if you are enrolling in one-on-one learning). Any specs will do, as long as the computer is able to run a web browser</li>
             <li>Charger and cables</li>
-            <li>A Lunch</li>
+            <li>A lunch, and a snack</li>
             <li>An open mind and a willingness to learn!</li>
           </ul>
         </h3>
@@ -59,7 +58,7 @@ const WhatWeDo = () => {
           Refund Policy
         </h2>
         <h3>
-          We offer a full refund if you cancel your enrollment at least 3 days before the start of the session. No refunds will be issued after this point.
+          We offer a full refund if you cancel your enrollment at least 3 days before the start of the session. No refunds will be issued after that point.
         </h3>
       </div>
     </section>

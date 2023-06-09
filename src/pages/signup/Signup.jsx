@@ -194,7 +194,7 @@ const Signup = () => {
           <div className = "form-group">
             <label hmtlfor="date">Date Selection:</label>
             <select id="date" name="date" required>
-              <option value="">Select a section</option>
+              <option value="">Select dates</option>
               {
                 dates.map((date, index) => {
                 return <option key={index} value={date}>{date}</option>
@@ -210,7 +210,7 @@ const Signup = () => {
             </div>
             <div className = "radio-group">
               <label hmtlfor="enrollment-1on1">1 on 1 (online)</label>
-              <input type="radio" id="enrollment-1on1" name="enrollment" value="1on1" required onClick = {() => setPrice(1750)}/>
+              <input type="radio" id="enrollment-1on1" name="enrollment" value="1on1" required onClick = {() => setPrice(1500)}/>
             </div>
           </div>
           <br />
