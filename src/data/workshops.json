@@ -1,42 +1,35 @@
 {
   "workshops": [
     {
-      "title": "Programming I: Introduction to Programming",
-      "desc": "Programming I encompasses a comprehensive exploration of the core principles of programming, with a focus on text-based coding using Python. You will delve into programming concepts such as data types, control flow, and functions. Additionally, you will acquire problem-solving skills and develop critical thinking abilities like a programmer, including following the Software Development Life Cycle (SDLC) and working collaboratively in teams.",
+      "title": "Introduction to Programming in Python",
+      "desc": "Introduction to Programming in Python encompasses a comprehensive exploration of the core principles of programming, with a focus on text-based coding using Python. You will delve into programming concepts such as data types, control flow, and functions. Additionally, you will acquire problem-solving skills and develop critical thinking abilities like a programmer, including following the Software Development Life Cycle (SDLC) and working collaboratively in teams.",
       "taught": "Ashwin Talwalkar & Vinay Siva",
       "rel-link": "/workshops/intro-to-programming",
       "level": "0",
       "for": "This curriculum is specifically designed for high school and later middle school students, and it does not require any previous programming experience.",
       "syllabus": "https://docs.google.com/document/d/16YwWUKBiutp4D7xkGocmjlAoM75-z43gHQ2kf4fQe-g/preview",
-      "dates": ["June 19th - June 30th", "July 3rd - July 14th"]
+      "date": "June 26th - July 7th"
     },
     {
-      "title": "Web Development I: Intro to Web Development",
+      "title": "Introduction to Programming in Java",
+      "desc": "Introduction to Programming in Java encompasses a comprehensive exploration of the core principles of programming, with a focus on text-based coding using Java. You will learn core programming principles including data types, control flow, methods, and object-oriented programming skills. Through problem-solving exercises and collaborative teamwork, you will develop critical thinking abilities and follow the Software Development Life Cycle (SDLC). This ciriculum is designed to help better prepare students for the AP Computer Science A.",
+      "taught": "Ashwin Talwalkar & Vinay Siva",
+      "rel-link": "/workshops/intro-to-programming",
+      "level": "0",
+      "for": "This curriculum is specifically designed for high school and later middle school students, and it does not require any previous programming experience, however some critical thinking skills are important",
+      "syllabus": "",
+      "date": "July 10th - July 21st"
+    },
+    {
+      "title": "Intro to Web Development",
       "desc": "Learn everything you need to know to build web based application. You'll explore topics such as HTML, CSS, and JavaScript, the three foundational technologies of the web, and discover how to use them to design and structure web apps, add multimedia content, and make your site responsive to different devices. Additionally, you will acquire problem-solving skills and develop critical thinking abilities like a programmer, including following the Software Development Life Cycle (SDLC) and working collaboratively in teams.",
       "taught": "Ashwin Talwalkar",
       "rel-link": "/workshops/intro-to-web-dev",
       "level": "0",
       "for": "This curriculum is specifically designed for high school and later middle school students, and it does not require any previous programming experience.",
       "syllabus": "https://docs.google.com/document/d/1of2lCZW2P0P7XTEaQZt46v3_FLh1Vz4OL7PCdGpbHsc/preview",
-      "dates": ["July 17th - July 28th", "July 31st - August 11th"]  
-    },
-    {
-      "title": "Web Development II: Building Full Stack Applications in React.js",
-      "desc": "Designed for intermediate developers, this course focuses on building robust and interactive applications from front to back. You'll gain hands-on experience with React.js, learning advanced concepts like state management, component lifecycle, routing, and authentication. Discover how to integrate React.js with backend technologies, creating seamless communication between the front-end and server. You'll explore popular tools and frameworks like Node.js, Express.js, and Firebase, enabling you to build complete, real-world web applications. Throughout the course, you'll tackle practical projects and engage in coding exercises that solidify your understanding and enhance your problem-solving skills. By the end, you'll have the expertise to develop feature-rich, responsive web applications that deliver exceptional user experiences.",
-      "taught": "Ashwin Talwalkar",
-      "level": "1",
-      "for": "This course is designed for intermediate web developers who already have a basic understanding of web development concepts and experience with HTML, CSS, and JavaScript. This course is ideal for individuals who want to expand their skills and dive deeper into building full stack applications using React.js.",
-      "syllabus": "https://docs.google.com/document/d/1vMbsc4q_IwVDaHmZKGK6O32WopW96_oOfhjuwySWk9Q/preview",
-      "dates": ["July 17th - July 28th", "July 31st - August 11th"]  
-    },
-    {
-      "title": "Programming II: Introduction to Data Structures and Algorithms",
-      "desc": "This course is designed to take your coding expertise to the next level by delving into the fascinating world of data structures and algorithms.In this class, you will learn how to optimize your code and solve complex problems more efficiently. We'll cover essential data structures like arrays, linked lists, stacks, queues, trees, and graphs, exploring their implementation and practical applications. You'll gain a deep understanding of how these data structures work and how to choose the right one for specific programming scenarios",
-      "taught":"Vinay Siva",
-      "level": "2",
-      "for": "This curriculum is specifically designed for high school students who have taken AP Computer Science or equivalant. This course is in Java.",
-      "syllabus": "https://docs.google.com/document/d/1uU07uB5QHrIWa39sOWVAVnweRAIqTh4HqlSZKOqLPJg/preview",
-      "dates": ["June 19th - June 30th", "July 3rd - July 14th"]
+      "date": "July 24th - August 4th"
     }
+    
   ]
 }

@@ -27,7 +27,12 @@ const WorkshopCard = ({ workshop }) => {
               <p className="card-text">
                 {workshop.for}
               </p>
-
+              <h3>
+                When is it?
+              </h3>
+              <p className="card-text">
+                {workshop.date}
+              </p>
               <a style = {{fontSize: "1.1rem"}} href = {workshop.syllabus} target = "_blank" rel = "noreferrer">Learn More</a>
               
             </div>

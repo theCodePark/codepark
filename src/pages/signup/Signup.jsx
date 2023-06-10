@@ -116,7 +116,8 @@ const Signup = () => {
     const emailInput = document.getElementById('email');
     const classSelect = document.getElementById('class');
     const enrollmentRadioButtons = document.getElementsByName('enrollment');
-    const dateSelect = document.getElementById('date');
+    // const dateSelect = document.getElementById('date');
+    const phoneSelect = document.getElementById('phone');
 
     let enrollmentType;
     enrollmentRadioButtons.forEach((radioButton) => {
@@ -132,7 +133,8 @@ const Signup = () => {
       email: emailInput.value,
       class: classSelect.value,
       enrollment: enrollmentType,
-      date: dateSelect.value,
+      // date: dateSelect.value,
+      phone: phoneSelect.value,
       price: price,
       timestamp: Timestamp.now()
     };
@@ -174,8 +176,14 @@ const Signup = () => {
 
           <div className = "form-group">
             <label hmtlfor="email">Email:</label>
-            <input type="email" id="email" name="email" required autoComplete="off" />
+            <input type="email" id="email" name="email" required />
           </div>
+
+          <div className = "form-group">
+            <label hmtlfor="phone">Phone Number:</label>
+            <input type="tel" id="phone" name="phone" pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}" required/>          
+          </div>
+
 
           <div className = "form-group">
             <label hmtlfor="class">Class Selection:</label>
@@ -184,14 +192,14 @@ const Signup = () => {
               {
                 workshopsJson.workshops.map((workshop, index) => {
                     return(
-                    <option key = {index} value={workshop.title}>{workshop.title}</option>
+                    <option key = {index} value={workshop.title}>{workshop.title} ({workshop.date})</option>
                     )
                 })
               }
             </select>
           </div>
           
-          <div className = "form-group">
+          {/* <div className = "form-group">
             <label hmtlfor="date">Date Selection:</label>
             <select id="date" name="date" required>
               <option value="">Select dates</option>
@@ -200,17 +208,17 @@ const Signup = () => {
                 return <option key={index} value={date}>{date}</option>
               })}
             </select>
-          </div>
+          </div> */}
 
           <div className = "form-group">
             <label hmtlfor="enrollment">Enrollment Type:</label>
             <div className = "radio-group">
               <label hmtlfor="enrollment-group">Group</label>
-              <input type="radio" id="enrollment-group" name="enrollment" value="group" required onClick = {() => setPrice(1000)}/>
+              <input type="radio" id="enrollment-group" name="enrollment" value="group" required onClick = {() => setPrice(1250)}/>
             </div>
             <div className = "radio-group">
               <label hmtlfor="enrollment-1on1">1 on 1 (online)</label>
-              <input type="radio" id="enrollment-1on1" name="enrollment" value="1on1" required onClick = {() => setPrice(1500)}/>
+              <input type="radio" id="enrollment-1on1" name="enrollment" value="1on1" required onClick = {() => setPrice(1750)}/>
             </div>
           </div>
           <br />
